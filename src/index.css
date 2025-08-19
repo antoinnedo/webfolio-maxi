@@ -1,0 +1,58 @@
+#root {
+  font-family: 'Helvetica';
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica/Helvetica-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica/Helvetica-Oblique.ttf');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica/Helvetica.ttf');
+  font-weight: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold-btn {
+  font-style: normal;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.bold-btn:hover,
+.bold-btn:active {
+  font-weight: bold;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
