@@ -3,7 +3,7 @@ import Portrait from '../assets/images/portrait.png';
 import CourseGrid from '../components/CourseGrid'
 import TechCarousel from '../components/TechCarousel';
 import { tcuLogo } from '../assets/svg/logos';
-import ShuffleText from '../components/ShuffleText';
+import Scramble from '../components/Scramble';
 
 const About = () => {
 
@@ -19,41 +19,17 @@ const About = () => {
         </div>
         <div className='col-span-1 flex justify-center items-center'>
           <div className='text-2xl text-left w-full max-w'>
-            <ShuffleText
-              triggerOnScroll={true}
-              threshold={.9}
-              autoStart={false}
-              revealDelay={120}
-              text='Matcha runs in my body.'
-            />
-            <ShuffleText 
-              triggerOnScroll={true}
-              threshold={.9}
-              autoStart={false}
-              revealDelay={120}
-              text="From that, I’ve gained superpower to program." 
-            />
-            <ShuffleText 
-              triggerOnScroll={true}
-              threshold={.9}
-              autoStart={false}
-              revealDelay={120}
-              text="I’m obsessed with rock climbing." 
-            />
-            <ShuffleText 
-              triggerOnScroll={true}
-              threshold={.9}
-              autoStart={false}
-              revealDelay={120}
-              text='I like running, working out, chess and creating arts.' 
-            />
-            <ShuffleText 
-              triggerOnScroll={true}
-              threshold={.9}
-              autoStart={false}
-              revealDelay={120}
-              text="I'm also great at programming, if I haven't mentioned." 
-            />
+            
+            <Scramble text='Matcha runs in my body.' className="mb-2" />
+
+            <Scramble text="From that, I’ve gained superpower to program." className="mb-2" />
+
+            <Scramble text="I’m obsessed with rock climbing." className="mb-2" />
+
+            <Scramble text='I like running, working out, chess and creating arts.' className="mb-2" />
+
+            <Scramble text="I'm also great at programming, if I haven't mentioned." className="mb-2" />
+
           </div>
         </div>
       </div>

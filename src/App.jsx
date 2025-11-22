@@ -1,11 +1,11 @@
 import './app.css'
-import Hero from './pages/Hero'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Taskbar from './components/taskbar'
-import ScrollArrow from './components/scroll-arrow'
+import Hero from './pages/Hero';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Taskbar from './components/taskbar';
+import Experience from './pages/Experience';
 import Sidebar from './components/sidebar';
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Hero />
           <About />
           <Projects />
+          <Experience />
           <Contact />
         </div>
       </div>

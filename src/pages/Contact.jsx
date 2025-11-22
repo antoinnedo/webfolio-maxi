@@ -5,7 +5,7 @@ import github from '../assets/svg/github.svg'
 
 const Contact = () => {
   return (
-    <div className='flex justify-center items-center h-screen w-full'>
+    <div id="contact" className='flex justify-center items-center h-screen w-full'>
       <div className='flex flex-col justify-center items-center gap-12'>
         <div>
           <div className='flex text-center my-12 text-5xl font-bold z-10 
