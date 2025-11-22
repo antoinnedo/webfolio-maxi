@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledLink = styled.a.withConfig({
   shouldForwardProp: (prop) => !['dark', 'white', 'fast', 'reverse'].includes(prop),
 })`
-  --background: ${(props) => (props.dark ? '#000000' : 'rgba(255, 255, 255, 0.3)')};
+  --background: ${(props) => (props.dark ? '#4d1979' : 'rgba(255, 255, 255, 0.3)')};
   --text: ${(props) => (props.dark ? '#FFFFFF' : '#000000')};
   --font-size: 1.25rem;
   --duration: ${(props) => (props.fast ? '0.32s' : '0.44s')};

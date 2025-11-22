@@ -130,7 +130,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='flex flex-col col-span-3 justify-center items-center text-9xl font-bold mb-1'>
-        <div className='absolute bg-purple-400 w-4/12 aspect-square z-0 translate-x-16 translate-y-16'></div>
+        {/* <div className='absolute bg-[#4d1979] w-4/12 aspect-square z-0 translate-x-24 translate-y-24'></div> */}
         <div className='absolute bg-yellow-300 w-4/12 aspect-square z-10'></div>
         <div ref={logoRef} className='group flex flex-col space-y-[-1.5rem] translate-y-[1.5rem] z-20 text-center'>
           <div ref={antRef}>ANT</div>
