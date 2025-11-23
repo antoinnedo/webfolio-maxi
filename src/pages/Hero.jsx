@@ -124,7 +124,7 @@ const Hero = () => {
             <div ref={cursorOneRef}>_</div>
           </div>
           <div className='pt-8 text-xl flex justify-left gap-4'>
-            <NonButton text="Resume" dark />
+            <NonButton text="Resume" dark href="https://drive.google.com/file/d/1dOSbrezgqjcEljzBDGMJ6SSRgb5cndj2/view?usp=sharing"/>
             <NonButton text="Contact" href="#contact" />
           </div>
         </div>
