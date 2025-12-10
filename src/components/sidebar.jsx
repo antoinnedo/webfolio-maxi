@@ -7,7 +7,7 @@ const SideBar = () => {
   const scrollToTop = () => {
     // 1. Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    
+
     // 2. Spin the logo
     setSpinCount(prevCount => prevCount + 1);
 
@@ -22,7 +22,7 @@ const SideBar = () => {
         <button
             type="button"
             onClick={scrollToTop}
-            className="absolute top-4 left-4 w-16 h-16 cursor-pointer group focus:outline-none"
+            className="absolute top-4 left-4 w-16 h-16 group focus:outline-none"
         >
             <img
                 src={logo}

@@ -37,7 +37,6 @@ html {
 .bold-btn {
   font-style: normal;
   padding: 10px 20px;
-  cursor: pointer;
 }
 
 .bold-btn:hover,

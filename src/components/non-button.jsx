@@ -28,7 +28,6 @@ const StyledLink = styled.a.withConfig({
   backdrop-filter: blur(10px);
   transform: translateY(var(--y, 0)) translateZ(0);
   transition: transform var(--duration) ease, box-shadow var(--duration) ease;
-  cursor: pointer;
 
   div {
     display: flex;
@@ -72,11 +71,11 @@ const StyledLink = styled.a.withConfig({
 
 const NonButton = ({ text, href, dark, white, fast, reverse, target, onClick }) => {
   return (
-    <StyledLink 
-      href={href} 
-      dark={dark} 
-      white={white} 
-      fast={fast} 
+    <StyledLink
+      href={href}
+      dark={dark}
+      white={white}
+      fast={fast}
       reverse={reverse}
       target={target}
       onClick={onClick}

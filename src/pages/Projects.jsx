@@ -51,41 +51,41 @@ const Projects = () => {
   return (
     <section id="projects" className='flex flex-col items-center min-h-screen p-4'>
       {/* Title */}
-      <div className='my-24 md:my-36 text-5xl font-bold z-10 
-                      bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat 
+      <div className='my-24 md:my-36 text-5xl font-bold z-10
+                      bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat
                       [background-position:20%_50%] [background-size:60%_100%]'
       >
         My Projects
       </div>
-      
+
       {/* Masonry Grid Layout */}
       <div className="w-full max-w-6xl columns-1 md:columns-2 lg:columns-3 gap-6">
         {projects.map((proj) => (
           // Project Card
-          <div 
-            key={proj.title} 
-            className="group relative w-full mb-6 rounded-2xl overflow-hidden break-inside-avoid cursor-pointer shadow-lg 
+          <div
+            key={proj.title}
+            className="group relative w-full mb-6 rounded-2xl overflow-hidden break-inside-avoid shadow-lg
                        transition-transform duration-200 ease-in-out hover:-translate-y-2"
           >
             {/* Image Container */}
             <div className="relative w-full">
-              <img 
-                src={proj.image} 
-                alt={`Screenshot of ${proj.title}`} 
-                className="w-full h-auto block rounded-2xl" 
+              <img
+                src={proj.image}
+                alt={`Screenshot of ${proj.title}`}
+                className="w-full h-auto block rounded-2xl"
               />
-              
+
               {/* Details Overlay */}
-              <div 
-                className="absolute bottom-0 left-0 w-full h-full p-6 pt-12 flex flex-col justify-end text-left 
+              <div
+                className="absolute bottom-0 left-0 w-full h-full p-6 pt-12 flex flex-col justify-end text-left
                            opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out
                            group-hover:bg-black/80 group-hover:backdrop-blur-[5px] rounded-2xl"
               >
                 {/* GitHub Icon Link */}
-                <a 
-                  href={proj.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="absolute top-6 right-6 text-white"
                 >
                   <GitHubIcon style={{ fontSize: '2rem' }} />
@@ -104,8 +104,8 @@ const Projects = () => {
                 {/* Tech Tags */}
                 <div className="flex flex-wrap justify-start gap-2">
                   {proj.tech.map((t) => (
-                    <span 
-                      key={t} 
+                    <span
+                      key={t}
                       className="bg-yellow-300 text-black px-3 py-1 rounded-full text-sm font-medium
                                  transition-transform duration-500 ease-in-out hover:scale-110"
                     >
@@ -210,7 +210,7 @@ export default Projects;
 
 //   return (
 //     <section ref={gallerySectionRef}>
-//       <div 
+//       <div
 //         id='experience'
 //         className="h-screen w-full flex flex-col items-center justify-center py-36"
 //       >

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-* { 
+* {
   /* border: 1px solid red !important;  */
 }
 
@@ -16,7 +16,6 @@
   overflow: hidden;
   margin-bottom: 1.5rem;
   break-inside: avoid;
-  cursor: pointer;
   box-shadow: var(--shadow-medium);
   transition: transform var(--transition-speed-fast) ease;
 }

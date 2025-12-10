@@ -1,9 +1,9 @@
 import React from 'react';
 import Portrait from '../assets/images/portrait.png';
-import CourseGrid from '../components/CourseGrid'
-import TechCarousel from '../components/TechCarousel';
+import CourseGrid from '../components/courseGrid.jsx'
+import TechCarousel from '../components/techCarousel.jsx';
 import { tcuLogo } from '../assets/svg/logos';
-import Scramble from '../components/Scramble';
+import Scramble from '../components/scramble.jsx';
 
 const About = () => {
 
@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className='col-span-1 flex justify-center items-center'>
           <div className='text-2xl text-left w-full max-w'>
-            
+
             <Scramble text='Matcha runs in my body.' className="mb-2" />
 
             <Scramble text="From that, I’ve gained superpower to program." className="mb-2" />
@@ -36,28 +36,38 @@ const About = () => {
       <div className='relative z-10 min-h-screen w-screen section2-container justify-center'>
         <div className="flex flex-col items-center space-y-12 m-36">
           <div className='flex flex-col items-center space-y-12'>
+            {/* Changed "School" to "Education" for a broader section title */}
             <div className='py-4 text-5xl font-bold z-10 bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat [background-position:50%_50%] [background-size:50%_100%]'>
-              School
+              Education
             </div>
-            <div className='grid grid-cols-2 items-center gap-16'>
-              <div className='col-span-1 items-center'>
-                <img src={tcuLogo} alt="TCU logo" className='object-contain z-10'/>
-                <p className='text-2xl text-center'>Fort Worth, Texas</p>
+
+            <div className='grid grid-cols-7 items-center gap-4 w-full max-w-6xl'>
+
+              {/* Logo & Location */}
+              <div className='col-span-4 flex flex-col items-center'>
+                <img src={tcuLogo} alt="TCU logo" className='w-112 object-contain mb-4'/>
+                <div className='text-4xl font-bold text-center leading-tight text-[#501875] font-serif'>
+                  Texas Christian University
+                </div>
+                <p className='text-xl text-gray-500 font-medium'>Fort Worth, Texas</p>
               </div>
-              <div className="col-span-1">
-                <div className='text-2xl text-right'>
-                  B.S. Computer Science <br/>
-                  Dean’s List <br/>
-                  GPA 3.71 <br/>
-                  Fall 2023 - Fall 2027
+
+              {/*  Name & Details */}
+              <div className="col-span-3 text-left">
+
+                <div className='text-2xl text-gray-800 leading-relaxed'>
+                  <span className='text-5xl'>B.S. </span> <br/>
+                  <span className='text-5xl font-bold'>Computer Science </span> <br/>
+                  <span className="font-bold">GPA 3.71</span> (Dean’s List) <br/>
+                  <span className="text-gray-500 text-xl">Fall 2023 - Spring 2027</span>
                 </div>
               </div>
+
             </div>
           </div>
-
           <div className='flex flex-col items-center space-y-12'>
-            <div className='py-4 text-5xl font-bold z-10 
-                            bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat 
+            <div className='py-4 text-5xl font-bold z-10
+                            bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat
                             [background-position:100%_50%] [background-size:70%_100%]'
             >
               Courses
@@ -66,8 +76,8 @@ const About = () => {
           </div>
 
           <div className='flex flex-col items-center space-y-12'>
-            <div className='py-4 text-5xl font-bold z-10 
-                            bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat 
+            <div className='py-4 text-5xl font-bold z-10
+                            bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat
                             [background-position:20%_50%] [background-size:60%_100%]'
             >
               Tech Stacks

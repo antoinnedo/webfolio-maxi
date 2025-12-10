@@ -6,10 +6,12 @@ import Taskbar from './components/taskbar';
 import Experience from './pages/Experience';
 import Sidebar from './components/sidebar';
 import Contact from './pages/Contact';
+import GlobalSpotlight from './components/globalSpotlight.jsx';
 
 function App() {
   return (
     <div className="relative">
+      <GlobalSpotlight />
       {/* Main content area, pushed to the right to avoid the yellow bar */}
       <div>
         <Taskbar />
