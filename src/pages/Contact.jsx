@@ -3,6 +3,7 @@ import gmail from '../assets/images/gmail.png';
 import iphone from '../assets/images/iphone.png';
 import linkedin from '../assets/images/linkedin.png';
 import github from '../assets/svg/github.svg';
+import resume from '../assets/svg/resume.svg';
 
 const ContactIcon = ({ href, icon, label, alt, reverse = false }) => {
   return (
@@ -62,6 +63,14 @@ const Contact = () => {
 
         {/* Horizontal Row - Flexbox handles the "Push" effect automatically */}
         <div className='flex flex-row items-center gap-24 md:gap-16 h-32 justify-center'>
+
+          <ContactIcon
+            href="/resume.pdf" // Path to your static PDF file
+            icon={resume}
+            label="View Resume"
+            alt="resume"
+            // download={true} // Uncomment this line if you want to force download instead of opening in a new tab
+          />
 
           <ContactIcon
             href="https://www.linkedin.com/in/anthonydo2307/"

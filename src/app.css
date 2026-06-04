@@ -105,3 +105,34 @@
   top: 1.5rem;
   right: 1.5rem;
 }
+
+.mobile-warning {
+  display: none;
+}
+
+/* Ensure your app content is visible */
+.app-content {
+  display: block;
+}
+
+/* --- Mobile Styles (Triggered on screens smaller than 768px) --- */
+@media (max-width: 768px) {
+
+  /* Hide the actual app */
+  .app-content {
+    display: none;
+  }
+
+  /* Show and center the warning */
+  .mobile-warning {
+    display: flex;             /* Enables Flexbox */
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    height: 100vh;             /* Full screen height */
+    text-align: center;        /* Centers text lines */
+    padding: 20px;             /* Prevents text touching edges */
+    font-family: sans-serif;   /* Optional: makes it look clean */
+    background-color: #f0f0f0; /* Optional: light grey background */
+    color: #333;               /* Optional: dark text */
+  }
+}

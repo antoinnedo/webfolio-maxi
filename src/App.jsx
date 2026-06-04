@@ -10,21 +10,29 @@ import GlobalSpotlight from './components/globalSpotlight.jsx';
 
 function App() {
   return (
-    <div className="relative">
-      <GlobalSpotlight />
-      {/* Main content area, pushed to the right to avoid the yellow bar */}
-      <div>
-        <Taskbar />
-        <Sidebar />
-        <div className='overflow-visible'>
-          <Hero />
-          <About />
-          <Projects />
-          <Experience />
-          <Contact />
+    <>
+      {/* 1. The Mobile Warning (Hidden on Desktop) */}
+      <div className="mobile-warning">
+        <p>I haven't optimized for mobile, please visit on a PC ;)</p>
+      </div>
+
+
+      <div className="relative">
+        <GlobalSpotlight />
+        {/* Main content area, pushed to the right to avoid the yellow bar */}
+        <div>
+          <Taskbar />
+          <Sidebar />
+          <div className='overflow-visible'>
+            <Hero />
+            <About />
+            <Projects />
+            <Experience />
+            <Contact />
+          </div>
         </div>
       </div>
-    </div>
+  </>
   )
 }
 
