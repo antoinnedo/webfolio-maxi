@@ -7,15 +7,6 @@ const RakunaExperience = () => {
   return (
     <div>
       <div className="flex flex-col items-center py-20">
-
-        {/* Title */}
-        <div className='my-24 text-5xl font-bold z-10
-                  bg-gradient-to-r from-yellow-300 to-yellow-300 bg-no-repeat
-                  [background-position:80%_100%] [background-size:80%_100%]'
-        >
-          Experience
-        </div>
-
         {/* Content Box */}
         <div id='RakunaIntro' className='grid grid-cols-2 gap-16 w-fit max-w-6xl mx-auto'>
 

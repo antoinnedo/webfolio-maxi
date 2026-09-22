@@ -21,8 +21,8 @@ const Taskbar = () => {
             <div className='hidden md:flex items-center space-x-4 rounded-full px-4 py-2
                        bg-white/30 backdrop-blur-lg shadow-lg relative'>
               <a href="#about" className='py-2 px-3 hover:-translate-y-1' onClick={scrollToTop}>About</a>
-              <a href="#projects" className='py-2 px-3 hover:-translate-y-1'>Projects</a>
               <a href="#experience" className='py-2 px-3 hover:-translate-y-1'>Experience</a>
+              <a href="#projects" className='py-2 px-3 hover:-translate-y-1'>Projects</a>
               <a href="#contact" className='py-2 px-3 hover:-translate-y-1'>Contact</a>
             </div>
 
@@ -46,8 +46,8 @@ const Taskbar = () => {
           {isMenuOpen && (
             <div className="md:hidden absolute top-full left-0 w-full bg-white px-4 pb-4 space-y-1 shadow-lg">
               <a href="#about" className="block text-center bold-btn">About</a>
-              <a href="#projects" className="block text-center bold-btn">Projects</a>
               <a href="#experience" className="block text-center bold-btn">Experience</a>
+              <a href="#projects" className="block text-center bold-btn">Projects</a>
               <a href="#contact" className="block text-center bold-btn">Contact</a>
             </div>
           )}

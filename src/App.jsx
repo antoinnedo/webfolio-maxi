@@ -7,17 +7,14 @@ import Experience from './pages/Experience';
 import Sidebar from './components/sidebar';
 import Contact from './pages/Contact';
 import GlobalSpotlight from './components/globalSpotlight.jsx';
+import MobileContact from './components/mobileContact.jsx';
 
 function App() {
   return (
     <>
-      {/* 1. The Mobile Warning (Hidden on Desktop) */}
-      <div className="mobile-warning">
-        <p>I haven't optimized for mobile, please visit on a PC ;)</p>
-      </div>
+      <MobileContact />
 
-
-      <div className="relative">
+      <div className="app-content relative">
         <GlobalSpotlight />
         {/* Main content area, pushed to the right to avoid the yellow bar */}
         <div>
@@ -26,8 +23,8 @@ function App() {
           <div className='overflow-visible'>
             <Hero />
             <About />
-            <Projects />
             <Experience />
+            <Projects />
             <Contact />
           </div>
         </div>

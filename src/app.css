@@ -106,33 +106,155 @@
   right: 1.5rem;
 }
 
-.mobile-warning {
+.mobile-contact {
   display: none;
 }
 
-/* Ensure your app content is visible */
 .app-content {
   display: block;
 }
 
-/* --- Mobile Styles (Triggered on screens smaller than 768px) --- */
-@media (max-width: 768px) {
-
-  /* Hide the actual app */
+@media (max-width: 1023px) {
   .app-content {
-    display: none;
+    display: none !important;
   }
 
-  /* Show and center the warning */
-  .mobile-warning {
-    display: flex;             /* Enables Flexbox */
-    justify-content: center;   /* Centers horizontally */
-    align-items: center;       /* Centers vertically */
-    height: 100vh;             /* Full screen height */
-    text-align: center;        /* Centers text lines */
-    padding: 20px;             /* Prevents text touching edges */
-    font-family: sans-serif;   /* Optional: makes it look clean */
-    background-color: #f0f0f0; /* Optional: light grey background */
-    color: #333;               /* Optional: dark text */
+  .mobile-contact {
+    display: flex;
+    min-height: 100vh;
+    min-height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #ffffff;
+    color: #111827;
+    text-align: center;
+  }
+
+  .mobile-contact-card {
+    width: min(100%, 30rem);
+    padding: 2.5rem 1.5rem;
+  }
+
+  .mobile-contact-logo {
+    display: block;
+    width: min(100%, 10rem);
+    height: auto;
+    margin: 0 auto 2rem;
+  }
+
+  .mobile-contact-eyebrow {
+    margin: 0 0 0.75rem;
+    color: #6b7280;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+
+  .mobile-contact-card h1 {
+    display: inline-block;
+    margin: 0;
+    background: linear-gradient(#fde047, #fde047) no-repeat;
+    background-position: 50% 90%;
+    background-size: 100% 30%;
+    font-size: clamp(2.75rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .mobile-contact-subtitle {
+    max-width: 22rem;
+    margin: 1.5rem auto 0;
+    color: #4b5563;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .mobile-contact-divider {
+    width: 3rem;
+    height: 0.3rem;
+    margin: 2.5rem auto;
+    background: #4d1979;
+  }
+
+  .mobile-contact-card h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .mobile-contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .mobile-contact-links a {
+    display: flex;
+    min-height: 6.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    color: #111827;
+    text-decoration: none;
+  }
+
+  .mobile-contact-links img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+  }
+
+  .mobile-contact-links span {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .mobile-desktop-modal-backdrop {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: rgba(17, 24, 39, 0.58);
+    backdrop-filter: blur(8px);
+  }
+
+  .mobile-desktop-modal {
+    width: min(100%, 27rem);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 24px 70px rgba(17, 24, 39, 0.25);
+    text-align: left;
+  }
+
+  .mobile-desktop-modal h2 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  .mobile-desktop-modal > p:not(.mobile-contact-eyebrow) {
+    margin: 1.25rem 0 1.75rem;
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .mobile-desktop-modal button {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 0;
+    border-radius: 999px;
+    background: #4d1979;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
   }
 }
